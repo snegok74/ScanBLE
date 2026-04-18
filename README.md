@@ -13,10 +13,7 @@ GREEN = '\033[92m'
 RESET = '\033[0m'
 
 async def scan_with_history():
-    print("Сканирование BLE устройств с историей")
-    print("да - устройство активно сейчас")
-    print("нет - устройство было, но сейчас не активно")
-    print("Нажмите Ctrl+C для остановки\n")
+    print("Сканирование BLE устройств")
     
     # Словарь для хранения устройств: {MAC: {"name": имя, "last_seen": время}}
     devices_history = {}
@@ -62,9 +59,6 @@ async def scan_with_history():
             else:
                 print("Устройства не найдены")
             
-            print()
-            print(f"Всего в истории: {len(devices_history)} устройств")
-            print(f"Активно сейчас: {len(active_macs)}")
             print()
             print("Нажмите Ctrl+C для выхода")
             
