@@ -1,6 +1,6 @@
 # ScanBLE
 <details>
-<summary>scan accessible within sight BLE devices</summary>
+<summary>Scan for BLE devices within range</summary>
 
 ```python
 import asyncio
